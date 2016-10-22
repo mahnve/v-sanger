@@ -1,7 +1,5 @@
 +++
-authors = [
-  "Tomas "
-]
+authors = ["Tomas Widell"]
 date = "2016-10-22T22:49:10+02:00"
 title = "Ptsch"
 tags = [
@@ -10,7 +8,6 @@ tags = [
 melody = "Plättlaggen"
 
 +++
-
 Uti handen håller vi flaskölen nu  
 Den skall öppnas med ett ptsch kära du  
 Mera öl i glasen fastare skum  
