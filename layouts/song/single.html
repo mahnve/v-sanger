@@ -14,8 +14,15 @@
                     <h1 >{{ .Title }}</h1>
                 </header>
                 <section>
+                    {{ if isset .Params "melody" }}
                     <p>Melodi: {{ .Params.melody }}  </p>
+                    {{ end }}
+
                     <p> {{ .Content }} </p> 
+
+                    {{ if isset .Params "authors" }}
+                    <p>Text: {{ delimit .Params.authors ", " }} </p>
+                    {{ end }}
                 </section>
             </article>
 
