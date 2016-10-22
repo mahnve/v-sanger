@@ -15,21 +15,21 @@
                 </header>
                 <section>
                     {{ if isset .Params "melody" }}
-                    <p>Melodi: {{ .Params.melody }}  </p>
+                    <p><strong>Melodi:</strong> {{ .Params.melody }}  </p>
                     {{ end }}
 
                     <p> {{ .Content }} </p> 
 
                     {{ if isset .Params "authors" }}
-                    <p>Text: {{ delimit .Params.authors ", " }} </p>
+                    <p><strong>Text:</strong> {{ delimit .Params.authors ", " }} </p>
                     {{ end }}
 
-                    <h3>Taggar</h3>
-                    <ul id="song-tags">
+                    <p>
+                        <strong>Taggar:</strong>
                         {{ range .Params.tags }}
-                        <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+                        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
                         {{ end }}
-                    </ul>
+                    </p>
 
                 </section>
             </article>
