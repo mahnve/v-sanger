@@ -70,18 +70,23 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #555;
+    padding: 20px 0;
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #555;
+.header-container header{
+    background-image: url("/img/v-white.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header-logo {
+    padding-left: 100px;
+    color: #eee;
 }
 
 .header-container,
-.footer-container,
-.main aside {
-    background: #ddd;
+.footer-container {
+    background: #8bcdff;
 }
 
 
@@ -95,29 +100,22 @@ nav ul {
     list-style-type: none;
 }
 
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
+header a {
     text-decoration: none;
     font-weight: bold;
 
-    background: #555;
-    color: #eee;
 }
 
 nav a:hover,
 nav a:visited {
 }
 
-nav a:hover {
-    text-decoration: underline;
+header a:hover {
+    text-decoration: none;
 }
 
 /* ==============
-    MOBILE: Main
+   MOBILE: Main
    ============== */
 
 .main {
@@ -137,7 +135,7 @@ nav a:hover {
 }
 
 /* ===============
-    ALL: IE Fixes
+   ALL: IE Fixes
    =============== */
 
 .ie7 .title {
@@ -150,27 +148,15 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
 
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
+    /* ====================
+       INTERMEDIATE: Menu
+       ==================== */
 
     nav a {
         float: left;
@@ -188,9 +174,9 @@ nav a:hover {
         margin-right: 0;
     }
 
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
+    /* ========================
+       INTERMEDIATE: IE Fixes
+       ======================== */
 
     nav ul li {
         display: inline;
@@ -203,20 +189,14 @@ nav a:hover {
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
+    /* ====================
+       WIDE: CSS3 Effects
+       ==================== */
 
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
 
-/* ============
-    WIDE: Menu
-   ============ */
+    /* ============
+       WIDE: Menu
+       ============ */
 
     .title {
         float: left;
@@ -227,9 +207,9 @@ nav a:hover {
         width: 38%;
     }
 
-/* ============
-    WIDE: Main
-   ============ */
+    /* ============
+       WIDE: Main
+       ============ */
 
     .main article {
         float: left;
@@ -244,9 +224,9 @@ nav a:hover {
 
 @media only screen and (min-width: 1140px) {
 
-/* ===============
-    Maximal Width
-   =============== */
+    /* ===============
+       Maximal Width
+       =============== */
 
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
