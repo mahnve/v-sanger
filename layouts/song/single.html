@@ -23,6 +23,14 @@
                     {{ if isset .Params "authors" }}
                     <p>Text: {{ delimit .Params.authors ", " }} </p>
                     {{ end }}
+
+                    <h3>Taggar</h3>
+                    <ul id="song-tags">
+                        {{ range .Params.tags }}
+                        <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+                        {{ end }}
+                    </ul>
+
                 </section>
             </article>
 
