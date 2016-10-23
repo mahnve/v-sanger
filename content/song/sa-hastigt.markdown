@@ -1,5 +1,5 @@
 +++
-tags = ["Snaps", "Kort"]
+tags = ["Snaps", "Kort", "Spontan"]
 date = "2016-10-22T23:47:35+02:00"
 title = "Så hastigt"
 
