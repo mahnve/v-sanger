@@ -20,16 +20,21 @@
 
                     <p> {{ .Content }} </p> 
 
-                    {{ if isset .Params "authors" }}
-                    <p><strong>Text:</strong> {{ delimit .Params.authors ", " }} </p>
-                    {{ end }}
-
-                    <p>
-                        <strong>Taggar:</strong>
-                        {{ range .Params.tags }}
-                        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                    <div class="song-metadata">
+                        {{ if isset .Params "authors" }}
+                        <p><strong>Text:</strong> {{ delimit .Params.authors ", " }} </p>
                         {{ end }}
-                    </p>
+
+                        {{ if isset .Params "year" }}
+                        <p><strong>År:</strong> {{ .Params.year }} </p>
+                        {{ end }}
+                        <p>
+                            <strong>Taggar:</strong>
+                            {{ range .Params.tags }}
+                            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                            {{ end }}
+                        </p>
+                    </div>
 
                 </section>
             </article>
