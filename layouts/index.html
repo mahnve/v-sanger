@@ -1,0 +1,21 @@
+{{ partial "doctype" . }}
+{{ partial "head" . }}
+<body>
+
+    {{ partial "header" . }}
+
+
+    <div class="main-container">
+        <div class="main wrapper clearfix">
+            <article>
+                <a href="/song/">Alla sånger</a>
+
+                {{ partial "tags" . }}
+            </article>
+
+        </div> <!-- #main -->
+    </div> <!-- #main-container -->
+
+    {{ partial "footer" . }} 
+</body>
+</html>

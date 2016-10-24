@@ -87,8 +87,12 @@ body {
 .header-container,
 .footer-container {
     background: #8bcdff;
+    color: #eee;
 }
 
+.footer-container a {
+    color: #eee;
+}
 
 /*==============
    MOBILE: Menu
@@ -106,12 +110,12 @@ header a {
 
 }
 
-nav a:hover,
-nav a:visited {
-}
-
-header a:hover {
+a {
     text-decoration: none;
+    color: #222;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 /* ==============
@@ -147,8 +151,20 @@ header a:hover {
    ========================================================================== */
 
 .song-metadata {
-    margin-top: 40px;
+    margin-top: 20px;
     border-top: solid 1px;
+}
+
+.all-tags li {
+    display: inline-block;
+    background-color: #8bcdff;
+    padding: 5px;
+    margin: 5px;
+    list-style-type: none;
+}
+
+.all-tags a {
+    color: #fff;
 }
 
 /* ==========================================================================
