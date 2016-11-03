@@ -6,6 +6,7 @@ authors = ["Joakim Pramsten", "Marcus Ahnve"]
 spex = ""
 date = "2016-10-23T13:36:51+02:00"
 year = 1991
+comment = "Skriven i bussen på geologiresan"
 
 +++
 Det var en buss som sa till en annan  

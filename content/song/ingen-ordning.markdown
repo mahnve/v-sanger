@@ -4,6 +4,7 @@ title = "Ingen ordning"
 tags = [
   "Spontan", "Snaps"
 ]
+comment = "Sjunges innan för att få sångledaren att sätta igång"
 +++
 
 Ingen ordning, ingen ordning  

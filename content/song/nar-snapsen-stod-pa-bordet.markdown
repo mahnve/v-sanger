@@ -1,11 +1,7 @@
 +++
 date = "2016-10-24T09:15:59+02:00"
 title = "När snapsen stod på bordet"
-tags = ["Snaps", "Spex"]
-melody = ""
-authors = [
-  "",
-]
+
 spex = ""
 
 +++
