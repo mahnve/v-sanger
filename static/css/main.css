@@ -71,27 +71,31 @@ body {
 
 .header-container {
     padding: 20px 0;
+    border-bottom: 1px solid #444;
 }
 
 .header-container header{
-    background-image: url("/img/v-white.png");
+    background-image: url("/img/v.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .header-logo {
     padding-left: 100px;
-    color: #eee;
+    color: #444;
 }
 
 .header-container,
 .footer-container {
-    background: #8bcdff;
-    color: #eee;
+    background: #fff;
+    color: #444;
 }
 
+.footer-container {
+    border-top: 1px solid #444;
+}
 .footer-container a {
-    color: #eee;
+    color: #444;
 }
 
 /*==============
@@ -165,6 +169,11 @@ a:hover {
 
 .all-tags a {
     color: #fff;
+}
+
+.comment {
+    font-style: italic;
+    font-size: 0.4em;
 }
 
 /* ==========================================================================
