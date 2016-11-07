@@ -3,8 +3,9 @@ tags = [
   "engelska"
 ]
 date = "2016-10-22T22:33:39+02:00"
-title = "I Drink The Fast Way"
-
+title = "Spritjojk"
+spex = "Agamemnon, KVSIF"
+year = 1984
 +++
 
 I drink the fast way  
