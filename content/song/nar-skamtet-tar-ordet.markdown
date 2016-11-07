@@ -7,7 +7,6 @@ tags = [
 ]
 date = "2016-11-03T21:50:10+01:00"
 title = "När skämtet tar ordet"
-
 +++
 När skämtet tar ordet vid vänskapens bord  
 Med fingret åt glasen som dofta  
