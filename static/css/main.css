@@ -1,44 +1,30 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+.vov-logo img {
+    min-height: 80px;
+    min-width: 80px;
 }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.hero   {
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+    background-image: url("/img/hero.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.hero h1.ui.header {
+    margin-top: 2em; 
+    font-size: 4em;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+.hero h2.ui.header {
+    font-size: 2em;
+    font-weight: normal;
 }
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
 
 textarea {
     resize: vertical;
@@ -51,130 +37,22 @@ textarea {
     padding: 0.2em 0;
 }
 
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    padding: 20px 0;
-    overflow: hidden;
-}
-
-.header-container a {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.header-container header{
+.header-container header {
     background-image: url("/img/v.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.header-logo {
-    padding-left: 100px;
-    color: #444;
-}
-
-.header-container,
-.footer-container {
-    background: #fff;
-    color: #444;
-}
-
-.footer-container {
-    border-top: 1px solid #444;
-}
-.footer-container a {
-    color: #444;
-}
-
-/*==============
-   MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-header a {
-    text-decoration: none;
-    font-weight: bold;
-
-}
-
-a {
-    text-decoration: none;
-    color: #222;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-/* ==============
-   MOBILE: Main
-   ============== */
-
-.main {
-    padding: 30px 0;
-}
-
-.main article h1 {
-    font-size: 2em;
-}
-
-.main aside {
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-    padding: 20px 0;
-}
-
-/* ===============
-   ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-.song-metadata {
+.song-metadata{
     margin-top: 20px;
     border-top: solid 1px;
 }
 
 .all-tags li {
     display: inline-block;
-    background-color: #8bcdff;
     padding: 5px;
     margin: 5px;
     list-style-type: none;
-}
-
-.all-tags a {
-    color: #fff;
 }
 
 .comment {
@@ -182,15 +60,6 @@ a:hover {
     font-size: 0.4em;
 }
 
-.hero   {
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    background-image: url("/img/hero.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
 
 @media all and (max-width: 1500px) {
     .hero {

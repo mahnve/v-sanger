@@ -1,29 +1,34 @@
-{{ partial "doctype" . }}
-{{ partial "head" . }}
+{{ partial "doctype" . }} {{ partial "head" . }}
+
 <body>
 
     {{ partial "header" . }}
 
-
-    <div class="hero">
+    <div class="ui hero">
+        <div class="ui center aligned text container">
+            <h1 class="ui inverted header">Sångerna du minns</h1>
+            <h2 class="ui inverted header">Sångerna du inte minns</h2>
+            <a href="/song/" class="ui button massive green">Börja sjung! <i class="right arrow icon"></i></a>
+        </div>
     </div>
-    <div class="main-container">
-        <div class="main wrapper clearfix">
-            <article>
-                <p>Ett litet försök att digitalisera sångerna som sjöngs på
-                    Konglig Sektion för Väg och Vattenbyggnad. </p>
-                <p>Om någon sång saknas, skriv ned den i ett email till m snabela hnve punkt org, så lägger jag till den.</p>
-
-                <div>
-
-                    {{ partial "tags" . }}
-
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="row">
+                <div class="ui segment column ">
+                    <p>Här hittar du sångerna som sjöngs på Konglig Sektion för Väg och Vattenbyggnad.</p>
+                    <p>Sångerna är taggade efter när de sjungs, vilken sprit som dricks, vilket språk osv. En komplett lista på taggar:</p>
+                    <p>Om någon sång saknas, skriv ned den i ett email till m snabel-a hnve punkt org, så lägger jag till den.</p>
                 </div>
-            </article>
-
-        </div> <!-- #main -->
-    </div> <!-- #main-container -->
-
-    {{ partial "footer" . }} 
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h2 class="ui header">Sångkategorier</h2>
+                    {{ partial "tags" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ partial "footer" . }}
 </body>
+
 </html>
