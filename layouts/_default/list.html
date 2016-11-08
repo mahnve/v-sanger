@@ -1,31 +1,31 @@
-{{ partial "doctype" . }}
-{{ partial "head" . }}
+{{ partial "doctype" . }} {{ partial "head" . }}
+
 <body>
 
-    {{ partial "header" . }}
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="row">
+                <div class="item vov-logo">
+                    <a class="item toc " href="/"><img src="/img/v.svg" alt="Väg och vatten" /></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four wide column">
+                    {{ partial "navigation" . }}
+                </div>
 
-
-    <div class="main-container">
-        <div class="main wrapper clearfix">
-            <article>
-                <header>
-                    <h1>Sånger</h1>
-                </header>
-                <section>
-                    <ul>
+                <div class="twelve wide column">
+                    <h1 class="ui header">Sånger</h1>
+                    <div class="ui list">
                         {{ range .Data.Pages.ByTitle }}
-                        <li>
-                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                </section>
-            </article>
-
-            {{ partial "navigation" . }}
-        </div> <!-- #main -->
-    </div> <!-- #main-container -->
-
-    {{ partial "footer" . }} 
+                        <a class="item" href="{{ .RelPermalink }}">{{ .Title }}</a> {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ partial "footer" . }}
 </body>
+
 </html>

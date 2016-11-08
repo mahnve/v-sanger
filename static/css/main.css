@@ -1,6 +1,11 @@
 .vov-logo img {
     min-height: 80px;
+    max-height: 140px;
+    max-width: 140px;
     min-width: 80px;
+}
+.ui p {
+    font-size: 1.333em;
 }
 
 .hero   {

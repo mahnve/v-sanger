@@ -1,52 +1,62 @@
-{{ partial "doctype" . }}
-{{ partial "head" . }}
+{{ partial "doctype" . }} {{ partial "head" . }}
+
 <body>
 
-
-    {{ partial "header" . }}
-
-    <div class="main wrapper clearfix">
-
-        <div class="main-container">
-
-            <article>
-                <header>
-                    <h1 >{{ .Title }}</h1>
-                </header>
-                <section>
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="row">
+                <div class="item vov-logo">
+                    <a class="item toc " href="/"><img src="/img/v.svg" alt="Väg och vatten" /></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four wide column">
+                    {{ partial "navigation" . }}
+                </div>
+                <div class=" twelve wide column">
+                    <h1 class="ui header ">{{ .Title }}</h1>
                     {{ if isset .Params "melody" }}
-                    <p><strong>Melodi:</strong> {{ .Params.melody }}  </p>
+                    <div><div class="ui horizontal label pink">Melodi:</div> {{ .Params.melody }} </div>
                     {{ end }}
-
-                    <p class="comment">{{ .Params.comment }}</p>
-
-                    <p> {{ .Content }} </p> 
-
-                    <div class="song-metadata">
+                    <p class="ui text comment ">{{ .Params.comment }}</p>
+                    <p class="ui text "> {{ .Content }} </p>
+                    <div class="ui grid">
                         {{ if isset .Params "authors" }}
-                        <p><strong>Text:</strong> {{ delimit .Params.authors ", " }} </p>
+                        <div class="row">
+                            <div class="ui horizontal label green">Text:</div>
+                            <div class="ui horizontal list">
+                                {{ range .Params.authors }}
+                                <p class="item">{{ . }}</p>
+                                {{ end }}
+                            </div>
+                        </div>
                         {{ end }}
-
-                        {{ if isset .Params "year" }}
-                        <p><strong>År:</strong> {{ .Params.year }} </p>
+                    {{ if isset .Params "year" }}
+                        <div class="row">
+                            <div class="ui horizontal label violet">År:</div>
+                            {{ .Params.year }}
+                        </div>
                         {{ end }}
-                        <p>
-                            <strong>Taggar:</strong>
-                            {{ range .Params.tags }}
-                            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-                            {{ end }}
-                        </p>
+                        {{ if isset .Params "spex" }}
+                        <div class="row">
+                            <div class="ui horizontal label blue">Spex:</div>
+                            {{ .Params.spex }}
+                        </div>
+                        {{ end }}
+                        <div class="row">
+                            <div class="ui horizontal list">
+                                <div class="ui horizontal label red">Taggar:</div>
+                                {{ range .Params.tags }}
+                                <a class="item" href="{{ " /tags/ " | relLangURL }}{{ . | urlize }} ">{{ . }}</a>
+                                {{ end }}
+                            </div>
+                        </div>
                     </div>
-
-                </section>
-            </article>
-
-            {{ partial "navigation" . }}
-            
-        </div> <!-- #main -->
-    </div> <!-- #main-container -->
-
-    {{ partial "footer" . }}
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>

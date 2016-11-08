@@ -2,7 +2,7 @@
 title = "Portos visa"
 tags = ["Gasque", "Till bords", "Förfest"]
 melody = "Annie, Get Your Gun"
-authors = ["T Andrén",]
+authors = ["T Andrén"]
 date = "2016-11-03T21:44:33+01:00"
 
 +++

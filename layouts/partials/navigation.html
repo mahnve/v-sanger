@@ -1,4 +1,6 @@
-<aside>
-    <h3>Taggar</h3>
-    {{ partial "tags" . }}
-</aside>
+<div class="ui vertical text menu">
+    <h3 class="header item">Taggar</h3>
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+    <a class="item" href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+    {{ end }}
+</div>
