@@ -1,9 +1,12 @@
-.vov-logo img {
-    min-height: 80px;
-    max-height: 140px;
-    max-width: 140px;
-    min-width: 80px;
+.vov-logo {
+    margin: 2em 0;
 }
+
+.vov-logo img {
+    height: 80px;
+    width: 80px;
+}
+
 .ui p,
 .song-list a {
     font-size: 1.333em;
@@ -12,6 +15,8 @@
 .metadata {
     margin-top: 10px;
 }
+
+
 
 .hero   {
     width: 100%;
