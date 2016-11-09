@@ -1,7 +1,7 @@
 +++
 date = "2016-10-22T18:02:49+02:00"
 title = "V-Ingenjören"
-tags = ["Väg och vatten", "Högtidliga visor", "Spex"]
+tags = ["Väg och vatten", "Högtidligt", "Spex"]
 melody = "Hockeysången"
 authors = ["Torbjörn Olsson"]
 spex = "KVSIF 1974"
