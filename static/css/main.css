@@ -9,6 +9,10 @@
     font-size: 1.333em;
 }
 
+.metadata {
+    margin-top: 10px;
+}
+
 .hero   {
     width: 100%;
     min-height: 600px;

@@ -20,36 +20,34 @@
                     {{ end }}
                     <p class="ui text comment ">{{ .Params.comment }}</p>
                     <p class="ui text "> {{ .Content }} </p>
-                    <div class="ui grid">
-                        {{ if isset .Params "authors" }}
-                        <div class="row">
-                            <div class="ui horizontal label green">Text:</div>
-                            <div class="ui horizontal list">
-                                {{ range .Params.authors }}
-                                <p class="item">{{ . }}</p>
-                                {{ end }}
-                            </div>
+                    {{ if isset .Params "authors" }}
+                    <div class="metadata">
+                        <div class="ui horizontal label green">Text:</div>
+                        <div class="ui horizontal list">
+                            {{ range .Params.authors }}
+                            <p class="item">{{ . }}</p>
+                            {{ end }}
                         </div>
-                        {{ end }}
-                        {{ if isset .Params "year" }}
-                        <div class="row">
-                            <div class="ui horizontal label violet">År:</div>
-                            {{ .Params.year }}
-                        </div>
-                        {{ end }}
-                        {{ if isset .Params "spex" }}
-                        <div class="row">
-                            <div class="ui horizontal label blue">Spex:</div>
-                            {{ .Params.spex }}
-                        </div>
-                        {{ end }}
-                        <div class="row">
-                            <div class="ui horizontal list">
-                                <div class="ui horizontal label red">Taggar:</div>
-                                {{ range .Params.tags }}
-                                <a class="item" href="{{ "/tags/" | relLangURL }}{{ . | urlize }} ">{{ . }}</a>
-                                {{ end }}
-                            </div>
+                    </div>
+                    {{ end }}
+                    {{ if isset .Params "year" }}
+                    <div class="metadata">
+                        <div class="ui horizontal label violet">År:</div>
+                        {{ .Params.year }}
+                    </div>
+                    {{ end }}
+                    {{ if isset .Params "spex" }}
+                    <div class="metadata">
+                        <div class="ui horizontal label blue">Spex:</div>
+                        {{ .Params.spex }}
+                    </div>
+                    {{ end }}
+                    <div class="metadata">
+                        <div class="ui horizontal list">
+                            <div class="ui horizontal label red">Taggar:</div>
+                            {{ range .Params.tags }}
+                            <a class="item" href="{{ "/tags/" | relLangURL }}{{ . | urlize }} ">{{ . }}</a>
+                            {{ end }}
                         </div>
                     </div>
                 </div>
