@@ -5,11 +5,13 @@ tags = ["snaps", "försångare"]
 spex = ""
 
 +++
+_Solo:_
 När snapsen stod på bordet  
 Då fick jag aldrig vara med  
 Jämt fick jag höra orden  
 Det tillhör ej god sed  
 
+_Alla:_
 Men ingen regel utan undantag  
 För på min kammare där super jag  
 Där njuter jag utav min egen dryck  
