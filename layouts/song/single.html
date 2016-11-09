@@ -47,7 +47,7 @@
                             <div class="ui horizontal list">
                                 <div class="ui horizontal label red">Taggar:</div>
                                 {{ range .Params.tags }}
-                                <a class="item" href="{{ " /tags/" | relLangURL }}{{ . | urlize }} ">{{ . }}</a>
+                                <a class="item" href="{{ "/tags/" | relLangURL }}{{ . | urlize }} ">{{ . }}</a>
                                 {{ end }}
                             </div>
                         </div>
