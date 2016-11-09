@@ -4,7 +4,8 @@
     max-width: 140px;
     min-width: 80px;
 }
-.ui p {
+.ui p,
+.ui a {
     font-size: 1.333em;
 }
 
