@@ -1,7 +1,7 @@
 +++
 date = "2016-11-10T09:59:17+01:00"
 title = "Hyllningsvisa till den man som uppfann den dryck som är vårt ständiga stöd i våra enkla liv"
-spex = "Nikolaus, KVSIF 1987"
+spex = "Nikolaus II, KVSIF 1987"
 tags = [
   "snaps",
   "spex"
