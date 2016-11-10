@@ -9,7 +9,7 @@ authors = [
   "Tage Danielsson"
 ]
 date = "2016-11-10T10:38:22+01:00"
-comment = "88-öresrevyn"
+comment = "Från 88-öresrevyn"
 year = 1970
 +++
 När man ser på hur barna  
