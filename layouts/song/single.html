@@ -1,3 +1,6 @@
+
+
+
 {{ partial "doctype" . }} {{ partial "head" . }}
 
 <body>
@@ -35,7 +38,7 @@
                     </div>
                     {{ end }}
                     {{ if isset .Params "spex" }}
-                    <div class="metadata">
+                    <div class="metadata"> 
                         <div class="ui horizontal label blue">Spex:</div>
                         {{ .Params.spex }}
                     </div>
@@ -57,6 +60,11 @@
     </div>
     {{ partial "footer" . }}
 
+    <noscript>
+        <!-- Matomo Image Tracker-->
+        <img src="https://analytics.marcusahnve.org/piwik.php?idsite=2&amp;rec=1" style="border:0" alt="" />
+        <!-- End Matomo -->
+    </noscript>
 </body>
 
 </html>
