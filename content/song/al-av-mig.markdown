@@ -16,5 +16,5 @@ Stulen ål kan väl inte smaka?
 Du tog en ål av mig  
 Måtte nu ditt samvete vakna  
 Ta vad du vill  
-Tag gädda och sill  
+Ta gädda och sill  
 Men ta ingen ål av mig

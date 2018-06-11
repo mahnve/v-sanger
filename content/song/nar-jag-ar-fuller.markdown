@@ -16,7 +16,7 @@ Det gör jag bara när jag är glad
 Och full och vacker  
 Och full och vacker
 
-När jag är fuller då är jag start  
+När jag är fuller då är jag stark  
 Fan vet om jag ej är modig  
 Då kan jag slå vem som helst i mark  
 Så han blir trasig och blodig  

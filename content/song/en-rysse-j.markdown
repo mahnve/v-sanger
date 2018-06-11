@@ -27,7 +27,7 @@ Nu drager en rysse åt helvete
 
 Och ryssen är död  
 Och kistan är röd  
-Men fan vet om ryssen är riktigt riktigt död  
+Men fan vet om ryssen är riktigt, riktigt död  
 Dra åt helvete  
 Dra åt helvete  
 Nu drager en rysse åt helvete
