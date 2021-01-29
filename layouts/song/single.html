@@ -45,7 +45,7 @@
                     {{ end }}
                     <div class="metadata">
                         <div class="ui horizontal list">
-                            <div class="ui horizontal label red">Taggar:</div>
+                            <div class="ui horizontal label red">Kategorier:</div>
                             {{ range .Params.tags }}
                             <a class="item" href="{{ "/tags/" | relLangURL }}{{ . | urlize }} ">{{ . }}</a>
                             {{ end }}
